@@ -1,0 +1,5 @@
+fcubs:
+  username: ${FCUBS_USERNAME:TAKEON02}
+  password: ${FCUBS_PASSWORD:Oracle@123}
+  service: ${FCUBS_SERVICE:FCUBSAccService}
+  customer-service-url: http://10.1.12.71:8101/FCUBSCustomerService/FCUBSCustomerService

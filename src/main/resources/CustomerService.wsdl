@@ -1,0 +1,1917 @@
+<definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com" name="FCUBSCustomerService">
+    <types>
+        <xsd:schema>
+            <xsd:import namespace="http://fcubs.ofss.com/service/FCUBSCustomerService" schemaLocation="http://10.1.12.71:8101/FCUBSCustomerService/FCUBSCustomerService?xsd=1"/>
+        </xsd:schema>
+    </types>
+    <message name="ModifyCustomerFS">
+        <part xmlns:ns1="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns1:MODIFYCUSTOMER_FSFS_REQ"/>
+    </message>
+    <message name="ModifyCustomerFSResponse">
+        <part xmlns:ns2="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns2:MODIFYCUSTOMER_FSFS_RES"/>
+    </message>
+    <message name="ModifyCustomerIO">
+        <part xmlns:ns3="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns3:MODIFYCUSTOMER_IOPK_REQ"/>
+    </message>
+    <message name="ModifyCustomerIOResponse">
+        <part xmlns:ns4="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns4:MODIFYCUSTOMER_IOPK_RES"/>
+    </message>
+    <message name="ModifyCustomerObligationFS">
+        <part xmlns:ns5="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns5:MODIFYCUSTOMEROBLIGATION_FSFS_REQ"/>
+    </message>
+    <message name="ModifyCustomerObligationFSResponse">
+        <part xmlns:ns6="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns6:MODIFYCUSTOMEROBLIGATION_FSFS_RES"/>
+    </message>
+    <message name="ModifyCustomerObligationIO">
+        <part xmlns:ns7="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns7:MODIFYCUSTOMEROBLIGATION_IOPK_REQ"/>
+    </message>
+    <message name="ModifyCustomerObligationIOResponse">
+        <part xmlns:ns8="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns8:MODIFYCUSTOMEROBLIGATION_IOPK_RES"/>
+    </message>
+    <message name="ModifyFATCAFS">
+        <part xmlns:ns9="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns9:MODIFYFATCA_FSFS_REQ"/>
+    </message>
+    <message name="ModifyFATCAFSResponse">
+        <part xmlns:ns10="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns10:MODIFYFATCA_FSFS_RES"/>
+    </message>
+    <message name="ModifyFATCAIO">
+        <part xmlns:ns11="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns11:MODIFYFATCA_IOPK_REQ"/>
+    </message>
+    <message name="ModifyFATCAIOResponse">
+        <part xmlns:ns12="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns12:MODIFYFATCA_IOPK_RES"/>
+    </message>
+    <message name="ModifyNSFMutualFS">
+        <part xmlns:ns13="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns13:MODIFYNSFMUTUAL_FSFS_REQ"/>
+    </message>
+    <message name="ModifyNSFMutualFSResponse">
+        <part xmlns:ns14="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns14:MODIFYNSFMUTUAL_FSFS_RES"/>
+    </message>
+    <message name="ModifyNSFMutualIO">
+        <part xmlns:ns15="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns15:MODIFYNSFMUTUAL_IOPK_REQ"/>
+    </message>
+    <message name="ModifyNSFMutualIOResponse">
+        <part xmlns:ns16="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns16:MODIFYNSFMUTUAL_IOPK_RES"/>
+    </message>
+    <message name="ModifyTDAmountBlockFS">
+        <part xmlns:ns17="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns17:MODIFYTDAMOUNTBLOCK_FSFS_REQ"/>
+    </message>
+    <message name="ModifyTDAmountBlockFSResponse">
+        <part xmlns:ns18="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns18:MODIFYTDAMOUNTBLOCK_FSFS_RES"/>
+    </message>
+    <message name="ModifyTDAmountBlockIO">
+        <part xmlns:ns19="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns19:MODIFYTDAMOUNTBLOCK_IOPK_REQ"/>
+    </message>
+    <message name="ModifyTDAmountBlockIOResponse">
+        <part xmlns:ns20="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns20:MODIFYTDAMOUNTBLOCK_IOPK_RES"/>
+    </message>
+    <message name="QueryAccountStructureIO">
+        <part xmlns:ns21="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns21:QUERYACCOUNTSTRUCTURE_IOFS_REQ"/>
+    </message>
+    <message name="QueryAccountStructureIOResponse">
+        <part xmlns:ns22="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns22:QUERYACCOUNTSTRUCTURE_IOFS_RES"/>
+    </message>
+    <message name="QueryAmtBlkIO">
+        <part xmlns:ns23="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns23:QUERYAMTBLK_IOFS_REQ"/>
+    </message>
+    <message name="QueryAmtBlkIOResponse">
+        <part xmlns:ns24="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns24:QUERYAMTBLK_IOFS_RES"/>
+    </message>
+    <message name="QueryBlkIO">
+        <part xmlns:ns25="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns25:QUERYBLK_IOFS_REQ"/>
+    </message>
+    <message name="QueryBlkIOResponse">
+        <part xmlns:ns26="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns26:QUERYBLK_IOFS_RES"/>
+    </message>
+    <message name="QueryClosureDataIO">
+        <part xmlns:ns27="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns27:QUERYCLOSUREDATA_IOFS_REQ"/>
+    </message>
+    <message name="QueryClosureDataIOResponse">
+        <part xmlns:ns28="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns28:QUERYCLOSUREDATA_IOFS_RES"/>
+    </message>
+    <message name="QueryConsolAmtBlkIO">
+        <part xmlns:ns29="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns29:QUERYCONSOLAMTBLK_IOFS_REQ"/>
+    </message>
+    <message name="QueryConsolAmtBlkIOResponse">
+        <part xmlns:ns30="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns30:QUERYCONSOLAMTBLK_IOFS_RES"/>
+    </message>
+    <message name="QueryCustAccDetailIO">
+        <part xmlns:ns31="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns31:QUERYCUSTACCDETAIL_IOFS_REQ"/>
+    </message>
+    <message name="QueryCustAccDetailIOResponse">
+        <part xmlns:ns32="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns32:QUERYCUSTACCDETAIL_IOFS_RES"/>
+    </message>
+    <message name="QueryCustSegAssociationIO">
+        <part xmlns:ns33="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns33:QUERYCUSTSEGASSOCIATION_IOFS_REQ"/>
+    </message>
+    <message name="QueryCustSegAssociationIOResponse">
+        <part xmlns:ns34="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns34:QUERYCUSTSEGASSOCIATION_IOFS_RES"/>
+    </message>
+    <message name="QueryCustSignImgeIO">
+        <part xmlns:ns35="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns35:QUERYCUSTSIGNIMGE_IOFS_REQ"/>
+    </message>
+    <message name="QueryCustSignImgeIOResponse">
+        <part xmlns:ns36="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns36:QUERYCUSTSIGNIMGE_IOFS_RES"/>
+    </message>
+    <message name="QueryCustomerIO">
+        <part xmlns:ns37="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns37:QUERYCUSTOMER_IOFS_REQ"/>
+    </message>
+    <message name="QueryCustomerIOResponse">
+        <part xmlns:ns38="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns38:QUERYCUSTOMER_IOFS_RES"/>
+    </message>
+    <message name="QueryCustomerDetailsIO">
+        <part xmlns:ns39="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns39:QUERYCUSTOMERDETAILS_IOFS_REQ"/>
+    </message>
+    <message name="QueryCustomerDetailsIOResponse">
+        <part xmlns:ns40="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns40:QUERYCUSTOMERDETAILS_IOFS_RES"/>
+    </message>
+    <message name="QueryCustomerObligationIO">
+        <part xmlns:ns41="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns41:QUERYCUSTOMEROBLIGATION_IOFS_REQ"/>
+    </message>
+    <message name="QueryCustomerObligationIOResponse">
+        <part xmlns:ns42="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns42:QUERYCUSTOMEROBLIGATION_IOFS_RES"/>
+    </message>
+    <message name="QueryFATCAIO">
+        <part xmlns:ns43="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns43:QUERYFATCA_IOFS_REQ"/>
+    </message>
+    <message name="QueryFATCAIOResponse">
+        <part xmlns:ns44="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns44:QUERYFATCA_IOFS_RES"/>
+    </message>
+    <message name="QueryNSFCBenqIO">
+        <part xmlns:ns45="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns45:QUERYNSFCBENQ_IOFS_REQ"/>
+    </message>
+    <message name="QueryNSFCBenqIOResponse">
+        <part xmlns:ns46="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns46:QUERYNSFCBENQ_IOFS_RES"/>
+    </message>
+    <message name="QueryNSFCheckIO">
+        <part xmlns:ns47="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns47:QUERYNSFCHECK_IOFS_REQ"/>
+    </message>
+    <message name="QueryNSFCheckIOResponse">
+        <part xmlns:ns48="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns48:QUERYNSFCHECK_IOFS_RES"/>
+    </message>
+    <message name="QueryNSFMutualIO">
+        <part xmlns:ns49="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns49:QUERYNSFMUTUAL_IOFS_REQ"/>
+    </message>
+    <message name="QueryNSFMutualIOResponse">
+        <part xmlns:ns50="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns50:QUERYNSFMUTUAL_IOFS_RES"/>
+    </message>
+    <message name="QueryTDAmountBlockIO">
+        <part xmlns:ns51="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns51:QUERYTDAMOUNTBLOCK_IOFS_REQ"/>
+    </message>
+    <message name="QueryTDAmountBlockIOResponse">
+        <part xmlns:ns52="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns52:QUERYTDAMOUNTBLOCK_IOFS_RES"/>
+    </message>
+    <message name="ReopenAmtBlkFS">
+        <part xmlns:ns53="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns53:REOPENAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="ReopenAmtBlkFSResponse">
+        <part xmlns:ns54="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns54:REOPENAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="ReopenAmtBlkIO">
+        <part xmlns:ns55="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns55:REOPENAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="ReopenAmtBlkIOResponse">
+        <part xmlns:ns56="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns56:REOPENAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="ReopenConsolAmtBlkFS">
+        <part xmlns:ns57="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns57:REOPENCONSOLAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="ReopenConsolAmtBlkFSResponse">
+        <part xmlns:ns58="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns58:REOPENCONSOLAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="ReopenConsolAmtBlkIO">
+        <part xmlns:ns59="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns59:REOPENCONSOLAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="ReopenConsolAmtBlkIOResponse">
+        <part xmlns:ns60="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns60:REOPENCONSOLAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="ReopenCustSegAssociationFS">
+        <part xmlns:ns61="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns61:REOPENCUSTSEGASSOCIATION_FSFS_REQ"/>
+    </message>
+    <message name="ReopenCustSegAssociationFSResponse">
+        <part xmlns:ns62="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns62:REOPENCUSTSEGASSOCIATION_FSFS_RES"/>
+    </message>
+    <message name="ReopenCustSegAssociationIO">
+        <part xmlns:ns63="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns63:REOPENCUSTSEGASSOCIATION_IOPK_REQ"/>
+    </message>
+    <message name="ReopenCustSegAssociationIOResponse">
+        <part xmlns:ns64="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns64:REOPENCUSTSEGASSOCIATION_IOPK_RES"/>
+    </message>
+    <message name="ReopenCustomerFS">
+        <part xmlns:ns65="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns65:REOPENCUSTOMER_FSFS_REQ"/>
+    </message>
+    <message name="ReopenCustomerFSResponse">
+        <part xmlns:ns66="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns66:REOPENCUSTOMER_FSFS_RES"/>
+    </message>
+    <message name="ReopenCustomerIO">
+        <part xmlns:ns67="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns67:REOPENCUSTOMER_IOPK_REQ"/>
+    </message>
+    <message name="ReopenCustomerIOResponse">
+        <part xmlns:ns68="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns68:REOPENCUSTOMER_IOPK_RES"/>
+    </message>
+    <message name="ReopenTDAmountBlockFS">
+        <part xmlns:ns69="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns69:REOPENTDAMOUNTBLOCK_FSFS_REQ"/>
+    </message>
+    <message name="ReopenTDAmountBlockFSResponse">
+        <part xmlns:ns70="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns70:REOPENTDAMOUNTBLOCK_FSFS_RES"/>
+    </message>
+    <message name="ReopenTDAmountBlockIO">
+        <part xmlns:ns71="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns71:REOPENTDAMOUNTBLOCK_IOPK_REQ"/>
+    </message>
+    <message name="ReopenTDAmountBlockIOResponse">
+        <part xmlns:ns72="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns72:REOPENTDAMOUNTBLOCK_IOPK_RES"/>
+    </message>
+    <message name="CloseTDAmountBlockFS">
+        <part xmlns:ns73="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns73:CLOSETDAMOUNTBLOCK_FSFS_REQ"/>
+    </message>
+    <message name="CloseTDAmountBlockFSResponse">
+        <part xmlns:ns74="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns74:CLOSETDAMOUNTBLOCK_FSFS_RES"/>
+    </message>
+    <message name="CloseTDAmountBlockIO">
+        <part xmlns:ns75="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns75:CLOSETDAMOUNTBLOCK_IOPK_REQ"/>
+    </message>
+    <message name="CloseTDAmountBlockIOResponse">
+        <part xmlns:ns76="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns76:CLOSETDAMOUNTBLOCK_IOPK_RES"/>
+    </message>
+    <message name="CreateAccountStructureFS">
+        <part xmlns:ns77="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns77:CREATEACCOUNTSTRUCTURE_FSFS_REQ"/>
+    </message>
+    <message name="CreateAccountStructureFSResponse">
+        <part xmlns:ns78="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns78:CREATEACCOUNTSTRUCTURE_FSFS_RES"/>
+    </message>
+    <message name="CreateAccountStructureIO">
+        <part xmlns:ns79="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns79:CREATEACCOUNTSTRUCTURE_IOPK_REQ"/>
+    </message>
+    <message name="CreateAccountStructureIOResponse">
+        <part xmlns:ns80="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns80:CREATEACCOUNTSTRUCTURE_IOPK_RES"/>
+    </message>
+    <message name="CreateClosureDataFS">
+        <part xmlns:ns81="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns81:CREATECLOSUREDATA_FSFS_REQ"/>
+    </message>
+    <message name="CreateClosureDataFSResponse">
+        <part xmlns:ns82="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns82:CREATECLOSUREDATA_FSFS_RES"/>
+    </message>
+    <message name="CreateClosureDataIO">
+        <part xmlns:ns83="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns83:CREATECLOSUREDATA_IOPK_REQ"/>
+    </message>
+    <message name="CreateClosureDataIOResponse">
+        <part xmlns:ns84="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns84:CREATECLOSUREDATA_IOPK_RES"/>
+    </message>
+    <message name="CreateConsolAmtBlkFS">
+        <part xmlns:ns85="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns85:CREATECONSOLAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="CreateConsolAmtBlkFSResponse">
+        <part xmlns:ns86="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns86:CREATECONSOLAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="CreateConsolAmtBlkIO">
+        <part xmlns:ns87="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns87:CREATECONSOLAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="CreateConsolAmtBlkIOResponse">
+        <part xmlns:ns88="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns88:CREATECONSOLAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="CreateCustSegAssociationFS">
+        <part xmlns:ns89="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns89:CREATECUSTSEGASSOCIATION_FSFS_REQ"/>
+    </message>
+    <message name="CreateCustSegAssociationFSResponse">
+        <part xmlns:ns90="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns90:CREATECUSTSEGASSOCIATION_FSFS_RES"/>
+    </message>
+    <message name="CreateCustSegAssociationIO">
+        <part xmlns:ns91="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns91:CREATECUSTSEGASSOCIATION_IOPK_REQ"/>
+    </message>
+    <message name="CreateCustSegAssociationIOResponse">
+        <part xmlns:ns92="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns92:CREATECUSTSEGASSOCIATION_IOPK_RES"/>
+    </message>
+    <message name="CreateCustomerIO">
+        <part xmlns:ns93="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns93:CREATECUSTOMER_IOPK_REQ"/>
+    </message>
+    <message name="CreateCustomerIOResponse">
+        <part xmlns:ns94="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns94:CREATECUSTOMER_IOPK_RES"/>
+    </message>
+    <message name="CreateCustomerObligationFS">
+        <part xmlns:ns95="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns95:CREATECUSTOMEROBLIGATION_FSFS_REQ"/>
+    </message>
+    <message name="CreateCustomerObligationFSResponse">
+        <part xmlns:ns96="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns96:CREATECUSTOMEROBLIGATION_FSFS_RES"/>
+    </message>
+    <message name="CreateCustomerObligationIO">
+        <part xmlns:ns97="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns97:CREATECUSTOMEROBLIGATION_IOPK_REQ"/>
+    </message>
+    <message name="CreateCustomerObligationIOResponse">
+        <part xmlns:ns98="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns98:CREATECUSTOMEROBLIGATION_IOPK_RES"/>
+    </message>
+    <message name="CreateFATCAFS">
+        <part xmlns:ns99="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns99:CREATEFATCA_FSFS_REQ"/>
+    </message>
+    <message name="CreateFATCAFSResponse">
+        <part xmlns:ns100="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns100:CREATEFATCA_FSFS_RES"/>
+    </message>
+    <message name="CreateFATCAIO">
+        <part xmlns:ns101="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns101:CREATEFATCA_IOPK_REQ"/>
+    </message>
+    <message name="CreateFATCAIOResponse">
+        <part xmlns:ns102="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns102:CREATEFATCA_IOPK_RES"/>
+    </message>
+    <message name="CreateNSFMutualFS">
+        <part xmlns:ns103="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns103:CREATENSFMUTUAL_FSFS_REQ"/>
+    </message>
+    <message name="CreateNSFMutualFSResponse">
+        <part xmlns:ns104="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns104:CREATENSFMUTUAL_FSFS_RES"/>
+    </message>
+    <message name="CreateNSFMutualIO">
+        <part xmlns:ns105="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns105:CREATENSFMUTUAL_IOPK_REQ"/>
+    </message>
+    <message name="CreateNSFMutualIOResponse">
+        <part xmlns:ns106="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns106:CREATENSFMUTUAL_IOPK_RES"/>
+    </message>
+    <message name="CreateTDAmountBlockFS">
+        <part xmlns:ns107="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns107:CREATETDAMOUNTBLOCK_FSFS_REQ"/>
+    </message>
+    <message name="CreateTDAmountBlockFSResponse">
+        <part xmlns:ns108="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns108:CREATETDAMOUNTBLOCK_FSFS_RES"/>
+    </message>
+    <message name="CreateTDAmountBlockIO">
+        <part xmlns:ns109="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns109:CREATETDAMOUNTBLOCK_IOPK_REQ"/>
+    </message>
+    <message name="CreateTDAmountBlockIOResponse">
+        <part xmlns:ns110="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns110:CREATETDAMOUNTBLOCK_IOPK_RES"/>
+    </message>
+    <message name="DeleteAmtBlkFS">
+        <part xmlns:ns111="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns111:DELETEAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="DeleteAmtBlkFSResponse">
+        <part xmlns:ns112="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns112:DELETEAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="DeleteAmtBlkIO">
+        <part xmlns:ns113="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns113:DELETEAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="DeleteAmtBlkIOResponse">
+        <part xmlns:ns114="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns114:DELETEAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="DeleteConsolAmtBlkFS">
+        <part xmlns:ns115="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns115:DELETECONSOLAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="DeleteConsolAmtBlkFSResponse">
+        <part xmlns:ns116="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns116:DELETECONSOLAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="DeleteConsolAmtBlkIO">
+        <part xmlns:ns117="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns117:DELETECONSOLAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="DeleteConsolAmtBlkIOResponse">
+        <part xmlns:ns118="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns118:DELETECONSOLAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="DeleteCustSegAssociationFS">
+        <part xmlns:ns119="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns119:DELETECUSTSEGASSOCIATION_FSFS_REQ"/>
+    </message>
+    <message name="DeleteCustSegAssociationFSResponse">
+        <part xmlns:ns120="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns120:DELETECUSTSEGASSOCIATION_FSFS_RES"/>
+    </message>
+    <message name="DeleteCustSegAssociationIO">
+        <part xmlns:ns121="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns121:DELETECUSTSEGASSOCIATION_IOPK_REQ"/>
+    </message>
+    <message name="DeleteCustSegAssociationIOResponse">
+        <part xmlns:ns122="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns122:DELETECUSTSEGASSOCIATION_IOPK_RES"/>
+    </message>
+    <message name="DeleteCustomerFS">
+        <part xmlns:ns123="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns123:DELETECUSTOMER_FSFS_REQ"/>
+    </message>
+    <message name="DeleteCustomerFSResponse">
+        <part xmlns:ns124="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns124:DELETECUSTOMER_FSFS_RES"/>
+    </message>
+    <message name="DeleteCustomerIO">
+        <part xmlns:ns125="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns125:DELETECUSTOMER_IOPK_REQ"/>
+    </message>
+    <message name="DeleteCustomerIOResponse">
+        <part xmlns:ns126="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns126:DELETECUSTOMER_IOPK_RES"/>
+    </message>
+    <message name="DeleteFATCAFS">
+        <part xmlns:ns127="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns127:DELETEFATCA_FSFS_REQ"/>
+    </message>
+    <message name="DeleteFATCAFSResponse">
+        <part xmlns:ns128="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns128:DELETEFATCA_FSFS_RES"/>
+    </message>
+    <message name="DeleteFATCAIO">
+        <part xmlns:ns129="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns129:DELETEFATCA_IOPK_REQ"/>
+    </message>
+    <message name="DeleteFATCAIOResponse">
+        <part xmlns:ns130="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns130:DELETEFATCA_IOPK_RES"/>
+    </message>
+    <message name="DeleteTDAmountBlockFS">
+        <part xmlns:ns131="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns131:DELETETDAMOUNTBLOCK_FSFS_REQ"/>
+    </message>
+    <message name="DeleteTDAmountBlockFSResponse">
+        <part xmlns:ns132="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns132:DELETETDAMOUNTBLOCK_FSFS_RES"/>
+    </message>
+    <message name="DeleteTDAmountBlockIO">
+        <part xmlns:ns133="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns133:DELETETDAMOUNTBLOCK_IOPK_REQ"/>
+    </message>
+    <message name="DeleteTDAmountBlockIOResponse">
+        <part xmlns:ns134="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns134:DELETETDAMOUNTBLOCK_IOPK_RES"/>
+    </message>
+    <message name="ModifyAccountStructureFS">
+        <part xmlns:ns135="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns135:MODIFYACCOUNTSTRUCTURE_FSFS_REQ"/>
+    </message>
+    <message name="ModifyAccountStructureFSResponse">
+        <part xmlns:ns136="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns136:MODIFYACCOUNTSTRUCTURE_FSFS_RES"/>
+    </message>
+    <message name="ModifyAccountStructureIO">
+        <part xmlns:ns137="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns137:MODIFYACCOUNTSTRUCTURE_IOPK_REQ"/>
+    </message>
+    <message name="ModifyAccountStructureIOResponse">
+        <part xmlns:ns138="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns138:MODIFYACCOUNTSTRUCTURE_IOPK_RES"/>
+    </message>
+    <message name="ModifyAmtBlkFS">
+        <part xmlns:ns139="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns139:MODIFYAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="ModifyAmtBlkFSResponse">
+        <part xmlns:ns140="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns140:MODIFYAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="ModifyAmtBlkIO">
+        <part xmlns:ns141="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns141:MODIFYAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="ModifyAmtBlkIOResponse">
+        <part xmlns:ns142="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns142:MODIFYAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="ModifyClosureDataFS">
+        <part xmlns:ns143="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns143:MODIFYCLOSUREDATA_FSFS_REQ"/>
+    </message>
+    <message name="ModifyClosureDataFSResponse">
+        <part xmlns:ns144="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns144:MODIFYCLOSUREDATA_FSFS_RES"/>
+    </message>
+    <message name="ModifyClosureDataIO">
+        <part xmlns:ns145="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns145:MODIFYCLOSUREDATA_IOPK_REQ"/>
+    </message>
+    <message name="ModifyClosureDataIOResponse">
+        <part xmlns:ns146="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns146:MODIFYCLOSUREDATA_IOPK_RES"/>
+    </message>
+    <message name="ModifyConsolAmtBlkFS">
+        <part xmlns:ns147="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns147:MODIFYCONSOLAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="ModifyConsolAmtBlkFSResponse">
+        <part xmlns:ns148="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns148:MODIFYCONSOLAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="ModifyConsolAmtBlkIO">
+        <part xmlns:ns149="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns149:MODIFYCONSOLAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="ModifyConsolAmtBlkIOResponse">
+        <part xmlns:ns150="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns150:MODIFYCONSOLAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="ModifyCustSegAssociationFS">
+        <part xmlns:ns151="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns151:MODIFYCUSTSEGASSOCIATION_FSFS_REQ"/>
+    </message>
+    <message name="ModifyCustSegAssociationFSResponse">
+        <part xmlns:ns152="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns152:MODIFYCUSTSEGASSOCIATION_FSFS_RES"/>
+    </message>
+    <message name="ModifyCustSegAssociationIO">
+        <part xmlns:ns153="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns153:MODIFYCUSTSEGASSOCIATION_IOPK_REQ"/>
+    </message>
+    <message name="ModifyCustSegAssociationIOResponse">
+        <part xmlns:ns154="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns154:MODIFYCUSTSEGASSOCIATION_IOPK_RES"/>
+    </message>
+    <message name="AuthorizeTDAmountBlockFS">
+        <part xmlns:ns155="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns155:AUTHORIZETDAMOUNTBLOCK_FSFS_REQ"/>
+    </message>
+    <message name="AuthorizeTDAmountBlockFSResponse">
+        <part xmlns:ns156="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns156:AUTHORIZETDAMOUNTBLOCK_FSFS_RES"/>
+    </message>
+    <message name="AuthorizeTDAmountBlockIO">
+        <part xmlns:ns157="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns157:AUTHORIZETDAMOUNTBLOCK_IOPK_REQ"/>
+    </message>
+    <message name="AuthorizeTDAmountBlockIOResponse">
+        <part xmlns:ns158="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns158:AUTHORIZETDAMOUNTBLOCK_IOPK_RES"/>
+    </message>
+    <message name="CloseConsolAmtBlkFS">
+        <part xmlns:ns159="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns159:CLOSECONSOLAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="CloseConsolAmtBlkFSResponse">
+        <part xmlns:ns160="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns160:CLOSECONSOLAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="CloseConsolAmtBlkIO">
+        <part xmlns:ns161="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns161:CLOSECONSOLAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="CloseConsolAmtBlkIOResponse">
+        <part xmlns:ns162="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns162:CLOSECONSOLAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="CloseCustSegAssociationFS">
+        <part xmlns:ns163="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns163:CLOSECUSTSEGASSOCIATION_FSFS_REQ"/>
+    </message>
+    <message name="CloseCustSegAssociationFSResponse">
+        <part xmlns:ns164="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns164:CLOSECUSTSEGASSOCIATION_FSFS_RES"/>
+    </message>
+    <message name="CloseCustSegAssociationIO">
+        <part xmlns:ns165="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns165:CLOSECUSTSEGASSOCIATION_IOPK_REQ"/>
+    </message>
+    <message name="CloseCustSegAssociationIOResponse">
+        <part xmlns:ns166="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns166:CLOSECUSTSEGASSOCIATION_IOPK_RES"/>
+    </message>
+    <message name="AuthorizeClosureDataFS">
+        <part xmlns:ns167="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns167:AUTHORIZECLOSUREDATA_FSFS_REQ"/>
+    </message>
+    <message name="AuthorizeClosureDataFSResponse">
+        <part xmlns:ns168="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns168:AUTHORIZECLOSUREDATA_FSFS_RES"/>
+    </message>
+    <message name="AuthorizeClosureDataIO">
+        <part xmlns:ns169="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns169:AUTHORIZECLOSUREDATA_IOPK_REQ"/>
+    </message>
+    <message name="AuthorizeClosureDataIOResponse">
+        <part xmlns:ns170="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns170:AUTHORIZECLOSUREDATA_IOPK_RES"/>
+    </message>
+    <message name="AuthorizeConsolAmtBlkFS">
+        <part xmlns:ns171="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns171:AUTHORIZECONSOLAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="AuthorizeConsolAmtBlkFSResponse">
+        <part xmlns:ns172="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns172:AUTHORIZECONSOLAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="AuthorizeConsolAmtBlkIO">
+        <part xmlns:ns173="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns173:AUTHORIZECONSOLAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="AuthorizeConsolAmtBlkIOResponse">
+        <part xmlns:ns174="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns174:AUTHORIZECONSOLAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="AuthorizeCustSegAssociationFS">
+        <part xmlns:ns175="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns175:AUTHORIZECUSTSEGASSOCIATION_FSFS_REQ"/>
+    </message>
+    <message name="AuthorizeCustSegAssociationFSResponse">
+        <part xmlns:ns176="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns176:AUTHORIZECUSTSEGASSOCIATION_FSFS_RES"/>
+    </message>
+    <message name="AuthorizeCustSegAssociationIO">
+        <part xmlns:ns177="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns177:AUTHORIZECUSTSEGASSOCIATION_IOPK_REQ"/>
+    </message>
+    <message name="AuthorizeCustSegAssociationIOResponse">
+        <part xmlns:ns178="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns178:AUTHORIZECUSTSEGASSOCIATION_IOPK_RES"/>
+    </message>
+    <message name="AuthorizeCustomerFS">
+        <part xmlns:ns179="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns179:AUTHORIZECUSTOMER_FSFS_REQ"/>
+    </message>
+    <message name="AuthorizeCustomerFSResponse">
+        <part xmlns:ns180="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns180:AUTHORIZECUSTOMER_FSFS_RES"/>
+    </message>
+    <message name="AuthorizeCustomerIO">
+        <part xmlns:ns181="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns181:AUTHORIZECUSTOMER_IOPK_REQ"/>
+    </message>
+    <message name="AuthorizeCustomerIOResponse">
+        <part xmlns:ns182="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns182:AUTHORIZECUSTOMER_IOPK_RES"/>
+    </message>
+    <message name="CreateAmtBlkIO">
+        <part xmlns:ns183="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns183:CREATEAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="CreateAmtBlkIOResponse">
+        <part xmlns:ns184="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns184:CREATEAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="CreateCustomerFS">
+        <part xmlns:ns185="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns185:CREATECUSTOMER_FSFS_REQ"/>
+    </message>
+    <message name="CreateCustomerFSResponse">
+        <part xmlns:ns186="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns186:CREATECUSTOMER_FSFS_RES"/>
+    </message>
+    <message name="CloseAmtBlkIO">
+        <part xmlns:ns187="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns187:CLOSEAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="CloseAmtBlkIOResponse">
+        <part xmlns:ns188="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns188:CLOSEAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="CloseCustomerFS">
+        <part xmlns:ns189="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns189:CLOSECUSTOMER_FSFS_REQ"/>
+    </message>
+    <message name="CloseCustomerFSResponse">
+        <part xmlns:ns190="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns190:CLOSECUSTOMER_FSFS_RES"/>
+    </message>
+    <message name="CreateAmtBlkFS">
+        <part xmlns:ns191="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns191:CREATEAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="CreateAmtBlkFSResponse">
+        <part xmlns:ns192="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns192:CREATEAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="CloseCustomerIO">
+        <part xmlns:ns193="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns193:CLOSECUSTOMER_IOPK_REQ"/>
+    </message>
+    <message name="CloseCustomerIOResponse">
+        <part xmlns:ns194="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns194:CLOSECUSTOMER_IOPK_RES"/>
+    </message>
+    <message name="AuthorizeAmtBlkIO">
+        <part xmlns:ns195="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns195:AUTHORIZEAMTBLK_IOPK_REQ"/>
+    </message>
+    <message name="AuthorizeAmtBlkIOResponse">
+        <part xmlns:ns196="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns196:AUTHORIZEAMTBLK_IOPK_RES"/>
+    </message>
+    <message name="AuthorizeAmtBlkFS">
+        <part xmlns:ns197="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns197:AUTHORIZEAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="AuthorizeAmtBlkFSResponse">
+        <part xmlns:ns198="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns198:AUTHORIZEAMTBLK_FSFS_RES"/>
+    </message>
+    <message name="CloseAmtBlkFS">
+        <part xmlns:ns199="http://fcubs.ofss.com/service/FCUBSCustomerService" name="RequestMsg" element="ns199:CLOSEAMTBLK_FSFS_REQ"/>
+    </message>
+    <message name="CloseAmtBlkFSResponse">
+        <part xmlns:ns200="http://fcubs.ofss.com/service/FCUBSCustomerService" name="ResponseMsg" element="ns200:CLOSEAMTBLK_FSFS_RES"/>
+    </message>
+    <portType name="FCUBSCustomerServiceSEI">
+        <operation name="ModifyCustomerFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustomerFSRequest" message="tns:ModifyCustomerFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustomerFSResponse" message="tns:ModifyCustomerFSResponse"/>
+        </operation>
+        <operation name="ModifyCustomerIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustomerIORequest" message="tns:ModifyCustomerIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustomerIOResponse" message="tns:ModifyCustomerIOResponse"/>
+        </operation>
+        <operation name="ModifyCustomerObligationFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustomerObligationFSRequest" message="tns:ModifyCustomerObligationFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustomerObligationFSResponse" message="tns:ModifyCustomerObligationFSResponse"/>
+        </operation>
+        <operation name="ModifyCustomerObligationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustomerObligationIORequest" message="tns:ModifyCustomerObligationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustomerObligationIOResponse" message="tns:ModifyCustomerObligationIOResponse"/>
+        </operation>
+        <operation name="ModifyFATCAFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyFATCAFSRequest" message="tns:ModifyFATCAFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyFATCAFSResponse" message="tns:ModifyFATCAFSResponse"/>
+        </operation>
+        <operation name="ModifyFATCAIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyFATCAIORequest" message="tns:ModifyFATCAIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyFATCAIOResponse" message="tns:ModifyFATCAIOResponse"/>
+        </operation>
+        <operation name="ModifyNSFMutualFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyNSFMutualFSRequest" message="tns:ModifyNSFMutualFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyNSFMutualFSResponse" message="tns:ModifyNSFMutualFSResponse"/>
+        </operation>
+        <operation name="ModifyNSFMutualIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyNSFMutualIORequest" message="tns:ModifyNSFMutualIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyNSFMutualIOResponse" message="tns:ModifyNSFMutualIOResponse"/>
+        </operation>
+        <operation name="ModifyTDAmountBlockFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyTDAmountBlockFSRequest" message="tns:ModifyTDAmountBlockFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyTDAmountBlockFSResponse" message="tns:ModifyTDAmountBlockFSResponse"/>
+        </operation>
+        <operation name="ModifyTDAmountBlockIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyTDAmountBlockIORequest" message="tns:ModifyTDAmountBlockIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyTDAmountBlockIOResponse" message="tns:ModifyTDAmountBlockIOResponse"/>
+        </operation>
+        <operation name="QueryAccountStructureIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryAccountStructureIORequest" message="tns:QueryAccountStructureIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryAccountStructureIOResponse" message="tns:QueryAccountStructureIOResponse"/>
+        </operation>
+        <operation name="QueryAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryAmtBlkIORequest" message="tns:QueryAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryAmtBlkIOResponse" message="tns:QueryAmtBlkIOResponse"/>
+        </operation>
+        <operation name="QueryBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryBlkIORequest" message="tns:QueryBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryBlkIOResponse" message="tns:QueryBlkIOResponse"/>
+        </operation>
+        <operation name="QueryClosureDataIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryClosureDataIORequest" message="tns:QueryClosureDataIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryClosureDataIOResponse" message="tns:QueryClosureDataIOResponse"/>
+        </operation>
+        <operation name="QueryConsolAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryConsolAmtBlkIORequest" message="tns:QueryConsolAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryConsolAmtBlkIOResponse" message="tns:QueryConsolAmtBlkIOResponse"/>
+        </operation>
+        <operation name="QueryCustAccDetailIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustAccDetailIORequest" message="tns:QueryCustAccDetailIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustAccDetailIOResponse" message="tns:QueryCustAccDetailIOResponse"/>
+        </operation>
+        <operation name="QueryCustSegAssociationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustSegAssociationIORequest" message="tns:QueryCustSegAssociationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustSegAssociationIOResponse" message="tns:QueryCustSegAssociationIOResponse"/>
+        </operation>
+        <operation name="QueryCustSignImgeIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustSignImgeIORequest" message="tns:QueryCustSignImgeIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustSignImgeIOResponse" message="tns:QueryCustSignImgeIOResponse"/>
+        </operation>
+        <operation name="QueryCustomerIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustomerIORequest" message="tns:QueryCustomerIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustomerIOResponse" message="tns:QueryCustomerIOResponse"/>
+        </operation>
+        <operation name="QueryCustomerDetailsIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustomerDetailsIORequest" message="tns:QueryCustomerDetailsIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustomerDetailsIOResponse" message="tns:QueryCustomerDetailsIOResponse"/>
+        </operation>
+        <operation name="QueryCustomerObligationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustomerObligationIORequest" message="tns:QueryCustomerObligationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryCustomerObligationIOResponse" message="tns:QueryCustomerObligationIOResponse"/>
+        </operation>
+        <operation name="QueryFATCAIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryFATCAIORequest" message="tns:QueryFATCAIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryFATCAIOResponse" message="tns:QueryFATCAIOResponse"/>
+        </operation>
+        <operation name="QueryNSFCBenqIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryNSFCBenqIORequest" message="tns:QueryNSFCBenqIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryNSFCBenqIOResponse" message="tns:QueryNSFCBenqIOResponse"/>
+        </operation>
+        <operation name="QueryNSFCheckIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryNSFCheckIORequest" message="tns:QueryNSFCheckIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryNSFCheckIOResponse" message="tns:QueryNSFCheckIOResponse"/>
+        </operation>
+        <operation name="QueryNSFMutualIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryNSFMutualIORequest" message="tns:QueryNSFMutualIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryNSFMutualIOResponse" message="tns:QueryNSFMutualIOResponse"/>
+        </operation>
+        <operation name="QueryTDAmountBlockIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryTDAmountBlockIORequest" message="tns:QueryTDAmountBlockIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/QueryTDAmountBlockIOResponse" message="tns:QueryTDAmountBlockIOResponse"/>
+        </operation>
+        <operation name="ReopenAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenAmtBlkFSRequest" message="tns:ReopenAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenAmtBlkFSResponse" message="tns:ReopenAmtBlkFSResponse"/>
+        </operation>
+        <operation name="ReopenAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenAmtBlkIORequest" message="tns:ReopenAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenAmtBlkIOResponse" message="tns:ReopenAmtBlkIOResponse"/>
+        </operation>
+        <operation name="ReopenConsolAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenConsolAmtBlkFSRequest" message="tns:ReopenConsolAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenConsolAmtBlkFSResponse" message="tns:ReopenConsolAmtBlkFSResponse"/>
+        </operation>
+        <operation name="ReopenConsolAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenConsolAmtBlkIORequest" message="tns:ReopenConsolAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenConsolAmtBlkIOResponse" message="tns:ReopenConsolAmtBlkIOResponse"/>
+        </operation>
+        <operation name="ReopenCustSegAssociationFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenCustSegAssociationFSRequest" message="tns:ReopenCustSegAssociationFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenCustSegAssociationFSResponse" message="tns:ReopenCustSegAssociationFSResponse"/>
+        </operation>
+        <operation name="ReopenCustSegAssociationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenCustSegAssociationIORequest" message="tns:ReopenCustSegAssociationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenCustSegAssociationIOResponse" message="tns:ReopenCustSegAssociationIOResponse"/>
+        </operation>
+        <operation name="ReopenCustomerFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenCustomerFSRequest" message="tns:ReopenCustomerFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenCustomerFSResponse" message="tns:ReopenCustomerFSResponse"/>
+        </operation>
+        <operation name="ReopenCustomerIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenCustomerIORequest" message="tns:ReopenCustomerIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenCustomerIOResponse" message="tns:ReopenCustomerIOResponse"/>
+        </operation>
+        <operation name="ReopenTDAmountBlockFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenTDAmountBlockFSRequest" message="tns:ReopenTDAmountBlockFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenTDAmountBlockFSResponse" message="tns:ReopenTDAmountBlockFSResponse"/>
+        </operation>
+        <operation name="ReopenTDAmountBlockIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenTDAmountBlockIORequest" message="tns:ReopenTDAmountBlockIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ReopenTDAmountBlockIOResponse" message="tns:ReopenTDAmountBlockIOResponse"/>
+        </operation>
+        <operation name="CloseTDAmountBlockFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseTDAmountBlockFSRequest" message="tns:CloseTDAmountBlockFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseTDAmountBlockFSResponse" message="tns:CloseTDAmountBlockFSResponse"/>
+        </operation>
+        <operation name="CloseTDAmountBlockIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseTDAmountBlockIORequest" message="tns:CloseTDAmountBlockIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseTDAmountBlockIOResponse" message="tns:CloseTDAmountBlockIOResponse"/>
+        </operation>
+        <operation name="CreateAccountStructureFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateAccountStructureFSRequest" message="tns:CreateAccountStructureFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateAccountStructureFSResponse" message="tns:CreateAccountStructureFSResponse"/>
+        </operation>
+        <operation name="CreateAccountStructureIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateAccountStructureIORequest" message="tns:CreateAccountStructureIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateAccountStructureIOResponse" message="tns:CreateAccountStructureIOResponse"/>
+        </operation>
+        <operation name="CreateClosureDataFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateClosureDataFSRequest" message="tns:CreateClosureDataFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateClosureDataFSResponse" message="tns:CreateClosureDataFSResponse"/>
+        </operation>
+        <operation name="CreateClosureDataIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateClosureDataIORequest" message="tns:CreateClosureDataIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateClosureDataIOResponse" message="tns:CreateClosureDataIOResponse"/>
+        </operation>
+        <operation name="CreateConsolAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateConsolAmtBlkFSRequest" message="tns:CreateConsolAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateConsolAmtBlkFSResponse" message="tns:CreateConsolAmtBlkFSResponse"/>
+        </operation>
+        <operation name="CreateConsolAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateConsolAmtBlkIORequest" message="tns:CreateConsolAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateConsolAmtBlkIOResponse" message="tns:CreateConsolAmtBlkIOResponse"/>
+        </operation>
+        <operation name="CreateCustSegAssociationFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustSegAssociationFSRequest" message="tns:CreateCustSegAssociationFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustSegAssociationFSResponse" message="tns:CreateCustSegAssociationFSResponse"/>
+        </operation>
+        <operation name="CreateCustSegAssociationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustSegAssociationIORequest" message="tns:CreateCustSegAssociationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustSegAssociationIOResponse" message="tns:CreateCustSegAssociationIOResponse"/>
+        </operation>
+        <operation name="CreateCustomerIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustomerIORequest" message="tns:CreateCustomerIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustomerIOResponse" message="tns:CreateCustomerIOResponse"/>
+        </operation>
+        <operation name="CreateCustomerObligationFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustomerObligationFSRequest" message="tns:CreateCustomerObligationFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustomerObligationFSResponse" message="tns:CreateCustomerObligationFSResponse"/>
+        </operation>
+        <operation name="CreateCustomerObligationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustomerObligationIORequest" message="tns:CreateCustomerObligationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustomerObligationIOResponse" message="tns:CreateCustomerObligationIOResponse"/>
+        </operation>
+        <operation name="CreateFATCAFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateFATCAFSRequest" message="tns:CreateFATCAFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateFATCAFSResponse" message="tns:CreateFATCAFSResponse"/>
+        </operation>
+        <operation name="CreateFATCAIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateFATCAIORequest" message="tns:CreateFATCAIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateFATCAIOResponse" message="tns:CreateFATCAIOResponse"/>
+        </operation>
+        <operation name="CreateNSFMutualFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateNSFMutualFSRequest" message="tns:CreateNSFMutualFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateNSFMutualFSResponse" message="tns:CreateNSFMutualFSResponse"/>
+        </operation>
+        <operation name="CreateNSFMutualIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateNSFMutualIORequest" message="tns:CreateNSFMutualIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateNSFMutualIOResponse" message="tns:CreateNSFMutualIOResponse"/>
+        </operation>
+        <operation name="CreateTDAmountBlockFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateTDAmountBlockFSRequest" message="tns:CreateTDAmountBlockFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateTDAmountBlockFSResponse" message="tns:CreateTDAmountBlockFSResponse"/>
+        </operation>
+        <operation name="CreateTDAmountBlockIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateTDAmountBlockIORequest" message="tns:CreateTDAmountBlockIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateTDAmountBlockIOResponse" message="tns:CreateTDAmountBlockIOResponse"/>
+        </operation>
+        <operation name="DeleteAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteAmtBlkFSRequest" message="tns:DeleteAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteAmtBlkFSResponse" message="tns:DeleteAmtBlkFSResponse"/>
+        </operation>
+        <operation name="DeleteAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteAmtBlkIORequest" message="tns:DeleteAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteAmtBlkIOResponse" message="tns:DeleteAmtBlkIOResponse"/>
+        </operation>
+        <operation name="DeleteConsolAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteConsolAmtBlkFSRequest" message="tns:DeleteConsolAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteConsolAmtBlkFSResponse" message="tns:DeleteConsolAmtBlkFSResponse"/>
+        </operation>
+        <operation name="DeleteConsolAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteConsolAmtBlkIORequest" message="tns:DeleteConsolAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteConsolAmtBlkIOResponse" message="tns:DeleteConsolAmtBlkIOResponse"/>
+        </operation>
+        <operation name="DeleteCustSegAssociationFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteCustSegAssociationFSRequest" message="tns:DeleteCustSegAssociationFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteCustSegAssociationFSResponse" message="tns:DeleteCustSegAssociationFSResponse"/>
+        </operation>
+        <operation name="DeleteCustSegAssociationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteCustSegAssociationIORequest" message="tns:DeleteCustSegAssociationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteCustSegAssociationIOResponse" message="tns:DeleteCustSegAssociationIOResponse"/>
+        </operation>
+        <operation name="DeleteCustomerFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteCustomerFSRequest" message="tns:DeleteCustomerFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteCustomerFSResponse" message="tns:DeleteCustomerFSResponse"/>
+        </operation>
+        <operation name="DeleteCustomerIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteCustomerIORequest" message="tns:DeleteCustomerIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteCustomerIOResponse" message="tns:DeleteCustomerIOResponse"/>
+        </operation>
+        <operation name="DeleteFATCAFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteFATCAFSRequest" message="tns:DeleteFATCAFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteFATCAFSResponse" message="tns:DeleteFATCAFSResponse"/>
+        </operation>
+        <operation name="DeleteFATCAIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteFATCAIORequest" message="tns:DeleteFATCAIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteFATCAIOResponse" message="tns:DeleteFATCAIOResponse"/>
+        </operation>
+        <operation name="DeleteTDAmountBlockFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteTDAmountBlockFSRequest" message="tns:DeleteTDAmountBlockFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteTDAmountBlockFSResponse" message="tns:DeleteTDAmountBlockFSResponse"/>
+        </operation>
+        <operation name="DeleteTDAmountBlockIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteTDAmountBlockIORequest" message="tns:DeleteTDAmountBlockIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/DeleteTDAmountBlockIOResponse" message="tns:DeleteTDAmountBlockIOResponse"/>
+        </operation>
+        <operation name="ModifyAccountStructureFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyAccountStructureFSRequest" message="tns:ModifyAccountStructureFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyAccountStructureFSResponse" message="tns:ModifyAccountStructureFSResponse"/>
+        </operation>
+        <operation name="ModifyAccountStructureIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyAccountStructureIORequest" message="tns:ModifyAccountStructureIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyAccountStructureIOResponse" message="tns:ModifyAccountStructureIOResponse"/>
+        </operation>
+        <operation name="ModifyAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyAmtBlkFSRequest" message="tns:ModifyAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyAmtBlkFSResponse" message="tns:ModifyAmtBlkFSResponse"/>
+        </operation>
+        <operation name="ModifyAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyAmtBlkIORequest" message="tns:ModifyAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyAmtBlkIOResponse" message="tns:ModifyAmtBlkIOResponse"/>
+        </operation>
+        <operation name="ModifyClosureDataFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyClosureDataFSRequest" message="tns:ModifyClosureDataFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyClosureDataFSResponse" message="tns:ModifyClosureDataFSResponse"/>
+        </operation>
+        <operation name="ModifyClosureDataIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyClosureDataIORequest" message="tns:ModifyClosureDataIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyClosureDataIOResponse" message="tns:ModifyClosureDataIOResponse"/>
+        </operation>
+        <operation name="ModifyConsolAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyConsolAmtBlkFSRequest" message="tns:ModifyConsolAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyConsolAmtBlkFSResponse" message="tns:ModifyConsolAmtBlkFSResponse"/>
+        </operation>
+        <operation name="ModifyConsolAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyConsolAmtBlkIORequest" message="tns:ModifyConsolAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyConsolAmtBlkIOResponse" message="tns:ModifyConsolAmtBlkIOResponse"/>
+        </operation>
+        <operation name="ModifyCustSegAssociationFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustSegAssociationFSRequest" message="tns:ModifyCustSegAssociationFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustSegAssociationFSResponse" message="tns:ModifyCustSegAssociationFSResponse"/>
+        </operation>
+        <operation name="ModifyCustSegAssociationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustSegAssociationIORequest" message="tns:ModifyCustSegAssociationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/ModifyCustSegAssociationIOResponse" message="tns:ModifyCustSegAssociationIOResponse"/>
+        </operation>
+        <operation name="AuthorizeTDAmountBlockFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeTDAmountBlockFSRequest" message="tns:AuthorizeTDAmountBlockFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeTDAmountBlockFSResponse" message="tns:AuthorizeTDAmountBlockFSResponse"/>
+        </operation>
+        <operation name="AuthorizeTDAmountBlockIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeTDAmountBlockIORequest" message="tns:AuthorizeTDAmountBlockIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeTDAmountBlockIOResponse" message="tns:AuthorizeTDAmountBlockIOResponse"/>
+        </operation>
+        <operation name="CloseConsolAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseConsolAmtBlkFSRequest" message="tns:CloseConsolAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseConsolAmtBlkFSResponse" message="tns:CloseConsolAmtBlkFSResponse"/>
+        </operation>
+        <operation name="CloseConsolAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseConsolAmtBlkIORequest" message="tns:CloseConsolAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseConsolAmtBlkIOResponse" message="tns:CloseConsolAmtBlkIOResponse"/>
+        </operation>
+        <operation name="CloseCustSegAssociationFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseCustSegAssociationFSRequest" message="tns:CloseCustSegAssociationFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseCustSegAssociationFSResponse" message="tns:CloseCustSegAssociationFSResponse"/>
+        </operation>
+        <operation name="CloseCustSegAssociationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseCustSegAssociationIORequest" message="tns:CloseCustSegAssociationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseCustSegAssociationIOResponse" message="tns:CloseCustSegAssociationIOResponse"/>
+        </operation>
+        <operation name="AuthorizeClosureDataFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeClosureDataFSRequest" message="tns:AuthorizeClosureDataFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeClosureDataFSResponse" message="tns:AuthorizeClosureDataFSResponse"/>
+        </operation>
+        <operation name="AuthorizeClosureDataIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeClosureDataIORequest" message="tns:AuthorizeClosureDataIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeClosureDataIOResponse" message="tns:AuthorizeClosureDataIOResponse"/>
+        </operation>
+        <operation name="AuthorizeConsolAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeConsolAmtBlkFSRequest" message="tns:AuthorizeConsolAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeConsolAmtBlkFSResponse" message="tns:AuthorizeConsolAmtBlkFSResponse"/>
+        </operation>
+        <operation name="AuthorizeConsolAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeConsolAmtBlkIORequest" message="tns:AuthorizeConsolAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeConsolAmtBlkIOResponse" message="tns:AuthorizeConsolAmtBlkIOResponse"/>
+        </operation>
+        <operation name="AuthorizeCustSegAssociationFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeCustSegAssociationFSRequest" message="tns:AuthorizeCustSegAssociationFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeCustSegAssociationFSResponse" message="tns:AuthorizeCustSegAssociationFSResponse"/>
+        </operation>
+        <operation name="AuthorizeCustSegAssociationIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeCustSegAssociationIORequest" message="tns:AuthorizeCustSegAssociationIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeCustSegAssociationIOResponse" message="tns:AuthorizeCustSegAssociationIOResponse"/>
+        </operation>
+        <operation name="AuthorizeCustomerFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeCustomerFSRequest" message="tns:AuthorizeCustomerFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeCustomerFSResponse" message="tns:AuthorizeCustomerFSResponse"/>
+        </operation>
+        <operation name="AuthorizeCustomerIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeCustomerIORequest" message="tns:AuthorizeCustomerIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeCustomerIOResponse" message="tns:AuthorizeCustomerIOResponse"/>
+        </operation>
+        <operation name="CreateAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateAmtBlkIORequest" message="tns:CreateAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateAmtBlkIOResponse" message="tns:CreateAmtBlkIOResponse"/>
+        </operation>
+        <operation name="CreateCustomerFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustomerFSRequest" message="tns:CreateCustomerFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateCustomerFSResponse" message="tns:CreateCustomerFSResponse"/>
+        </operation>
+        <operation name="CloseAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseAmtBlkIORequest" message="tns:CloseAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseAmtBlkIOResponse" message="tns:CloseAmtBlkIOResponse"/>
+        </operation>
+        <operation name="CloseCustomerFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseCustomerFSRequest" message="tns:CloseCustomerFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseCustomerFSResponse" message="tns:CloseCustomerFSResponse"/>
+        </operation>
+        <operation name="CreateAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateAmtBlkFSRequest" message="tns:CreateAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CreateAmtBlkFSResponse" message="tns:CreateAmtBlkFSResponse"/>
+        </operation>
+        <operation name="CloseCustomerIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseCustomerIORequest" message="tns:CloseCustomerIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseCustomerIOResponse" message="tns:CloseCustomerIOResponse"/>
+        </operation>
+        <operation name="AuthorizeAmtBlkIO">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeAmtBlkIORequest" message="tns:AuthorizeAmtBlkIO"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeAmtBlkIOResponse" message="tns:AuthorizeAmtBlkIOResponse"/>
+        </operation>
+        <operation name="AuthorizeAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeAmtBlkFSRequest" message="tns:AuthorizeAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/AuthorizeAmtBlkFSResponse" message="tns:AuthorizeAmtBlkFSResponse"/>
+        </operation>
+        <operation name="CloseAmtBlkFS">
+            <input wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseAmtBlkFSRequest" message="tns:CloseAmtBlkFS"/>
+            <output wsam:Action="http://FCUBSCustomerService.types.ws.gw.fcubs.ofss.com/FCUBSCustomerServiceSEI/CloseAmtBlkFSResponse" message="tns:CloseAmtBlkFSResponse"/>
+        </operation>
+    </portType>
+    <binding name="FCUBSCustomerServiceSEIBinding" type="tns:FCUBSCustomerServiceSEI">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <operation name="ModifyCustomerFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyCustomerIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyCustomerObligationFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyCustomerObligationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyFATCAFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyFATCAIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyNSFMutualFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyNSFMutualIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyTDAmountBlockFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyTDAmountBlockIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryAccountStructureIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryClosureDataIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryConsolAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryCustAccDetailIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryCustSegAssociationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryCustSignImgeIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryCustomerIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryCustomerDetailsIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryCustomerObligationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryFATCAIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryNSFCBenqIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryNSFCheckIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryNSFMutualIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="QueryTDAmountBlockIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenConsolAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenConsolAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenCustSegAssociationFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenCustSegAssociationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenCustomerFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenCustomerIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenTDAmountBlockFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ReopenTDAmountBlockIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseTDAmountBlockFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseTDAmountBlockIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateAccountStructureFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateAccountStructureIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateClosureDataFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateClosureDataIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateConsolAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateConsolAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateCustSegAssociationFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateCustSegAssociationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateCustomerIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateCustomerObligationFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateCustomerObligationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateFATCAFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateFATCAIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateNSFMutualFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateNSFMutualIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateTDAmountBlockFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateTDAmountBlockIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteConsolAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteConsolAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteCustSegAssociationFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteCustSegAssociationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteCustomerFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteCustomerIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteFATCAFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteFATCAIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteTDAmountBlockFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="DeleteTDAmountBlockIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyAccountStructureFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyAccountStructureIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyClosureDataFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyClosureDataIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyConsolAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyConsolAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyCustSegAssociationFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="ModifyCustSegAssociationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeTDAmountBlockFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeTDAmountBlockIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseConsolAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseConsolAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseCustSegAssociationFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseCustSegAssociationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeClosureDataFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeClosureDataIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeConsolAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeConsolAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeCustSegAssociationFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeCustSegAssociationIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeCustomerFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeCustomerIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateCustomerFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseCustomerFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CreateAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseCustomerIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeAmtBlkIO">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="AuthorizeAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="CloseAmtBlkFS">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="FCUBSCustomerService">
+        <port name="FCUBSCustomerServiceSEI" binding="tns:FCUBSCustomerServiceSEIBinding">
+            <soap:address location="http://10.1.12.71:8101/FCUBSCustomerService/FCUBSCustomerService"/>
+        </port>
+    </service>
+</definitions>
