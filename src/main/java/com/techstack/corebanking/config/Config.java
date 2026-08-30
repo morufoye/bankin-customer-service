@@ -33,7 +33,7 @@ public class Config {
 	    return client;
 	  }
 
-	@Bean
+	//@Bean
 	public GlobalOperationCustomizer fcubsHeaders() {
 
 		return (operation, handlerMethod) -> {

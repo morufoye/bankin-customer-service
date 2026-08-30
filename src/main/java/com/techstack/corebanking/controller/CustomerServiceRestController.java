@@ -20,12 +20,8 @@ public class CustomerServiceRestController {
 	private CustomerServiceClient customerserviceclient ;
 
 	@PostMapping("/api/v1/createcust")
-	public CREATECUSTOMERFSFSRES CreateCustomer (@Valid @RequestBody CustomerCreateRequest customercreaterequest,
-												 @RequestHeader Map<String, String> requestHeaders) {
-
-		FCUBSHEADERType fcubsHeader =
-				RequestUtil.getRequestURL(requestHeaders);
-		CREATECUSTOMERFSFSRES responseMsg =  customerserviceclient.createCust(customercreaterequest, fcubsHeader);
+	public CREATECUSTOMERFSFSRES CreateCustomer (@Valid @RequestBody CustomerCreateRequest customercreaterequest) {
+		CREATECUSTOMERFSFSRES responseMsg =  customerserviceclient.createCust(customercreaterequest);
 		return responseMsg;
 	}
 }

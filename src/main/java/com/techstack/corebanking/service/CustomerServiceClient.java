@@ -5,6 +5,7 @@ import com.techstack.corebanking.stub.CREATECUSTOMERFSFSREQ;
 import com.techstack.corebanking.stub.CREATECUSTOMERFSFSRES;
 import com.techstack.corebanking.stub.CustomerFullType;
 import com.techstack.corebanking.stub.FCUBSHEADERType;
+import com.techstack.corebanking.util.RequestUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,14 +32,17 @@ public class CustomerServiceClient {
 			DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 	private final WebServiceTemplate webServiceTemplate;
+	private final RequestUtil requestUtil;
 
-	public CustomerServiceClient(Jaxb2Marshaller marshaller) {
+	public CustomerServiceClient(Jaxb2Marshaller marshaller, RequestUtil requestUtil) {
 		this.webServiceTemplate = new WebServiceTemplate(marshaller);
-	}
+        this.requestUtil = requestUtil;
+    }
 
 	public CREATECUSTOMERFSFSRES createCust(
-			CustomerCreateRequest request,
-			FCUBSHEADERType fcubsHeader) {
+			CustomerCreateRequest request) {
+
+		FCUBSHEADERType fcubsHeader = requestUtil.createHeader();
 
 		CREATECUSTOMERFSFSREQ soapRequest =
 				buildCustomerRequest(request, fcubsHeader);
